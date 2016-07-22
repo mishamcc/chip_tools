@@ -121,7 +121,7 @@ template<const std::string &name,
          class... Successors>
 Errcode InetDevice<name, Successors...>::write_data(const std::string &data, size_t *actually_send)
 {
-   if (this->is_using())
+   if (this->used())
    {
 #ifdef CHIP_TOOLS_OFFLINE
       if (actually_send)
@@ -149,7 +149,7 @@ template<const std::string &name,
          class... Successors>
 Errcode InetDevice<name, Successors...>::read_data(std::string &data)
 {
-   if (this->is_using())
+   if (this->used())
    {
 #ifdef CHIP_TOOLS_OFFLINE
       return Errcode::success;

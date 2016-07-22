@@ -60,14 +60,14 @@ public:
 
    Errcode connect_all()
    {
-      if (this->is_using())
+      if (this->used())
          RETURN_IF_ERROR(try_connect::call<This>(static_cast<This *>(this)));
       return Connect<Device, Successors...>::perform(this);
    }
 
    Errcode disconnect_all()
    {
-      if (this->is_using())
+      if (this->used())
          RETURN_IF_ERROR(try_disconnect::call<This>(static_cast<This *>(this)));
       return Disconnect<Device, Successors...>::perform(this);
    }

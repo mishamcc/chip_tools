@@ -83,11 +83,11 @@ BOOST_AUTO_TEST_CASE(InitializeTest)
    BOOST_CHECK(stand.Device4::is_initialized());
    BOOST_CHECK(stand.Device5::is_initialized());
 
-   BOOST_CHECK(stand.is_using());
-   BOOST_CHECK(stand.Device2::is_using());
-   BOOST_CHECK(stand.Device3::is_using());
-   BOOST_CHECK(stand.Device4::is_using());
-   BOOST_CHECK(stand.Device5::is_using());
+   BOOST_CHECK(stand.used());
+   BOOST_CHECK(stand.Device2::used());
+   BOOST_CHECK(stand.Device3::used());
+   BOOST_CHECK(stand.Device4::used());
+   BOOST_CHECK(stand.Device5::used());
 
    BOOST_CHECK_EQUAL(stand.get_info(), name1);
    BOOST_CHECK_EQUAL(stand.Device2::get_info(), "Device2 info");

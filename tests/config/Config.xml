@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Device1 Using="true">
-  <Device2 Using="true" Info="Device2 info">
+<Device1 Used="true">
+  <Device2 Used="true" Info="Device2 info">
   </Device2>  
-  <Device3 Using="true" Info="Device3 info">
-    <Device4 Using="true" Info="Device4 info">
-      <Device5 Using="true" Info="Device5 info">
+  <Device3 Used="true" Info="Device3 info">
+    <Device4 Used="true" Info="Device4 info">
+      <Device5 Used="true" Info="Device5 info">
       </Device5>
     </Device4>
   </Device3>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Stand Using="true">
-  <Multimeter Using="true" Info="Keithley Multimeter">
+<Stand Used="true">
+  <Multimeter Used="true" Info="Keithley Multimeter">
      <Connect>ASRL7::INSTR</Connect>
      <Delay>400</Delay>
   </Multimeter>
-  <SourceMeter Using="true" Info="Keithley Sourcemeter">
+  <SourceMeter Used="true" Info="Keithley Sourcemeter">
      <Connect>ASRL3::INSTR</Connect>
      <Delay>300</Delay>
   </SourceMeter>
